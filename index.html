@@ -153,79 +153,80 @@
     </section>
 
     <!-- 3. Gallery Section -->
-    <section id="gallery" class="py-16 md:py-24 bg-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="section-title text-gray-900">Gallery</h2>
+  <section id="gallery" class="py-16 md:py-24 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="section-title text-gray-900">Gallery</h2>
 
-            <!-- Reel Embed: TEMPORARILY HIDDEN -->
-            <!-- To re-enable the reel, remove the 'hidden' class from the div below and replace the YouTube video ID (dQw4w9WgXcQ). -->
-            <div class="mb-12 hidden" id="acting-reel-container">
-                <h3 class="text-2xl font-semibold mb-4 text-gray-800">Current Acting Reel</h3>
-                <div class="reel-container shadow-2xl">
-                    <iframe 
-                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                        title="Your Acting Reel" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen
-                        loading="lazy"
-                    ></iframe>
-                </div>
+        <div class="mb-12 hidden" id="acting-reel-container">
+            <h3 class="text-2xl font-semibold mb-4 text-gray-800">Current Acting Reel</h3>
+            <div class="reel-container shadow-2xl">
+                <iframe 
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    title="Your Acting Reel" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen
+                    loading="lazy"
+                ></iframe>
             </div>
-            
-            <!-- Gallery -->
-            <div class="mt-16">
-                <h3 class="text-2xl font-semibold mb-6 text-gray-800">Gallery & Stills</h3>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    
-                    <!-- Image 1: Commercial Look (Now headshot2.jpg) -->
-                    <div class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-300">
-                        <!-- SRC PATH -->
-                        <img 
-                            src="./images/headshot2.jpg" 
-                            alt="Commercial Still"
-                            class="w-full h-auto object-cover aspect-[3/2]"
-                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=IMAGE+headshot2.jpg+NOT+FOUND';"
-                        >
-                    </div>
-
-                    <!-- Image 2: Dramatic Still (Now headshot3.jpg) -->
-                    <div class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-300">
-                        <!-- SRC PATH -->
-                        <img 
-                            src="./images/headshot3.jpg" 
-                            alt="Dramatic Scene Still"
-                            class="w-full h-auto object-cover aspect-[3/2]"
-                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=IMAGE+headshot3.jpg+NOT+FOUND';"
-                        >
-                    </div>
-
-                    <!-- Image 3: Portrait (Main Headshot repeated, headshot.jpg) -->
-                    <div class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-300">
-                        <!-- SRC PATH -->
-                        <img 
-                            src="./images/headshot.jpg" 
-                            alt="Portrait Look"
-                            class="w-full h-auto object-cover aspect-[3/2]"
-                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=IMAGE+headshot.jpg+NOT+FOUND';"
-                        >
-                    </div>
-
-                    <!-- Image 4: Portrait/Second Look (Now headshot4.jpg) -->
-                    <div class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-300">
-                        <!-- SRC PATH -->
-                        <img 
-                            src="./images/headshot4.jpg" 
-                            alt="Portrait/Second Look"
-                            class="w-full h-auto object-cover aspect-[3/2]"
-                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=IMAGE+headshot4.jpg+NOT+FOUND';"
-                        >
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </section>
+        
+        <div class="mt-16">
+            <h3 class="text-2xl font-semibold mb-6 text-gray-800">Gallery & Stills</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                
+                <div 
+                    class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-300 cursor-pointer"
+                    onclick="openLightbox('./images/headshot2.jpg')"
+                >
+                    <img 
+                        src="./images/headshot2.jpg" 
+                        alt="Commercial Still"
+                        class="w-full h-auto object-cover aspect-[3/2]"
+                        onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=IMAGE+headshot2.jpg+NOT+FOUND';"
+                    >
+                </div>
+
+                <div 
+                    class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-300 cursor-pointer"
+                    onclick="openLightbox('./images/headshot3.jpg')"
+                >
+                    <img 
+                        src="./images/headshot3.jpg" 
+                        alt="Dramatic Scene Still"
+                        class="w-full h-auto object-cover aspect-[3/2]"
+                        onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=IMAGE+headshot3.jpg+NOT+FOUND';"
+                    >
+                </div>
+
+                <div 
+                    class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-300 cursor-pointer"
+                    onclick="openLightbox('./images/headshot.jpg')"
+                >
+                    <img 
+                        src="./images/headshot.jpg" 
+                        alt="Portrait Look"
+                        class="w-full h-auto object-cover aspect-[3/2]"
+                        onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=IMAGE+headshot.jpg+NOT+FOUND';"
+                    >
+                </div>
+
+                <div 
+                    class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-300 cursor-pointer"
+                    onclick="openLightbox('./images/headshot4.jpg')"
+                >
+                    <img 
+                        src="./images/headshot4.jpg" 
+                        alt="Portrait/Second Look"
+                        class="w-full h-auto object-cover aspect-[3/2]"
+                        onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=IMAGE+headshot4.jpg+NOT+FOUND';"
+                    >
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
     <!-- 4. Credits Section -->
    <section id="credits" class="py-16 md:py-24 bg-white">
@@ -427,8 +428,58 @@
             menu.classList.toggle('hidden');
         });
     </script>
+<div id="lightbox-modal" class="hidden fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4" onclick="closeLightbox()">
+    
+    <div class="max-w-4xl max-h-full" onclick="event.stopPropagation()">
+        
+        <img id="lightbox-image" src="" alt="Full-size image" class="rounded-lg shadow-2xl max-w-full max-h-[80vh] object-contain">
+        
+        <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white text-4xl font-light hover:text-gray-300 transition focus:outline-none">&times;</button>
+        
+    </div>
+</div>
+
+    <script>
+    // Get the modal and image elements
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxImage = document.getElementById('lightbox-image');
+
+    /**
+     * Opens the lightbox modal with the specified image source.
+     * @param {string} imageSrc - The path to the full-size image.
+     */
+    function openLightbox(imageSrc) {
+        // Set the source of the large image in the modal
+        lightboxImage.src = imageSrc;
+        
+        // Remove the 'hidden' class to make the modal visible (Tailwind utility)
+        lightboxModal.classList.remove('hidden');
+        
+        // Add a class to the body to prevent background scrolling
+        document.body.classList.add('overflow-hidden');
+    }
+
+    /**
+     * Closes the lightbox modal.
+     */
+    function closeLightbox() {
+        // Add the 'hidden' class to hide the modal
+        lightboxModal.classList.add('hidden');
+        
+        // Remove the class to re-enable background scrolling
+        document.body.classList.remove('overflow-hidden');
+    }
+
+    // Optional: Close the lightbox when the Escape key is pressed
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape' && !lightboxModal.classList.contains('hidden')) {
+            closeLightbox();
+        }
+    });
+</script>
 </body>
 </html>
+
 
 
 
