@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zero Feeney | Official Acting Portfolio</title>
-    <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Load Inter font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <style>
         /* Custom styles for professional, sleek look */
@@ -31,6 +29,7 @@
             background-color: #3B82F6; /* Tailwind blue-500 */
             border-radius: 2px;
         }
+        /* Custom CSS for Responsive Video Embed */
         .reel-container {
             position: relative;
             width: 100%;
@@ -50,7 +49,6 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Navigation Bar -->
     <header class="sticky top-0 z-50 bg-white shadow-md">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <a href="#home" class="text-2xl font-extrabold text-gray-900 tracking-wider hover:text-blue-600 transition duration-300">ZERO FEENEY</a>
@@ -60,13 +58,11 @@
                 <a href="#credits" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">Credits</a>
                 <a href="#contact" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">Contact</a>
             </div>
-            <!-- Mobile Menu Button (Hamburger) -->
             <button id="menu-button" class="md:hidden text-gray-600 hover:text-blue-600 transition duration-300 focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
         </nav>
 
-        <!-- Mobile Menu (Hidden by default) -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 pb-2">
             <a href="#about" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
             <a href="#gallery" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Gallery</a>
@@ -75,27 +71,21 @@
         </div>
     </header>
 
-    <!-- 1. Hero Section -->
     <section id="home" class="pt-24 pb-16 md:py-32 bg-gray-900 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-12">
             
-            <!-- Text Content -->
             <div class="md:w-1/2 text-center md:text-left">
-                <!-- UPDATED TITLE BLOCK -->
                 <p class="text-sm font-semibold uppercase tracking-widest text-blue-400 mb-2">ACTOR | CHOREOGRAPHER | PERFORMANCE ARTIST</p>
                 <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4">Zero Feeney</h1>
                 <p class="text-xl md:text-2xl text-gray-300 max-w-lg mb-8">
                     Portland actor, choreographer and artist working on stage and screen.
                 </p>
-                <!-- CTA BUTTON UPDATED: Changed from "Watch Reel" to "View Portfolio" since the reel is hidden -->
                 <a href="#gallery" class="inline-block px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105">
                     View Portfolio
                 </a>
             </div>
 
-            <!-- Headshot Image -->
             <div class="md:w-1/3">
-                <!-- Headshot Image Path -->
                 <img 
                     src="./images/headshot.jpg" 
                     alt="Zero Feeney Professional Headshot"
@@ -106,22 +96,21 @@
         </div>
     </section>
 
- <!-- 2. About Section -->
-    <section id="about" class="py-16 md:py-24 bg-white">
+<section id="about" class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="section-title text-gray-900">About Me</h2>
 
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
                 
-                <!-- Main Bio -->
                 <div class="lg:col-span-2">
                     <p class="text-lg leading-relaxed text-gray-700 mb-6">
-                        I am a dedicated, Portland-based actor and certified Stage Combat Choreographer with a career spanning many years in Portland, OR, working consistently across stage and film. My acting experience covers a wide range of styles, from intense drama and broad comedy to live improv. I am a graduate of the Portland Actors Conservatory and specialized in combat training at the Academy of Theatrical Combat in Los Angeles. My commitment to the work is unwavering—I am known in the industry for bringing integrity to every project. Throughout my career, I've had the privilege of training and studying with prominent industry figures, including Kristina Haddad, Ted Rooney, and Patrick Malone.   </p>
+                        I am a dedicated, Portland-based actor and certified **Stage Combat Choreographer** with a career spanning over three decades in the Pacific Northwest, working consistently across **stage and film** since 1994. My acting experience covers a wide range of styles, from intense **drama** and broad **comedy** to live **improv**. I am a graduate of the **Portland Actors Conservatory** and specialized in combat training at the **ACADEMY OF THEATRICAL COMBAT** in Los Angeles. My commitment to the work is unwavering—I am known in the industry for being **responsible and reliable**, and for bringing integrity to every project. Throughout my career, I've had the privilege of training and studying with prominent industry figures, including **Kristina Haddad, Ted Rooney, and Patrick Malone**.
+                    </p>
                     <p class="text-lg leading-relaxed text-gray-700">
-                       My work has been recognized by the Portland theater community with two prestigious awards. I received the PAMTA (Portland Area Musical Theatre Award) for Outstanding Fight Choreographer for my work on Snow White at Northwest Children's Theater, demonstrating my technical mastery and storytelling ability in action. Additionally, I earned a Best Supporting Actor award from Twilight Theater Company for my portrayal of Robert in the comedic farce Boeing Boeing. Whether I'm building a safe and dynamic fight sequence or delivering a nuanced performance, I am fully invested in the art of collaboration and committed to delivering exceptional results. </p>
+                        My work has been recognized by the Portland theater community with two prestigious awards. I received the **PAMTA** (Portland Area Musical Theatre Award) for **Outstanding Fight Choreographer** for my work on *Snow White* at Northwest Children's Theater Company, demonstrating my technical mastery and storytelling ability in action. Additionally, I earned a **Best Supporting Actor** award from Twilight Theater Company for my portrayal of Robert in the comedic farce *Boeing Boeing*. Whether I'm building a safe and dynamic fight sequence or delivering a nuanced performance, I am fully invested in the art of collaboration and committed to delivering exceptional results.
+                    </p>
                 </div>
 
-                <!-- Key Information Box -->
                 <div class="bg-gray-100 p-6 rounded-xl shadow-inner">
                     <h3 class="text-xl font-bold mb-4 text-gray-800 border-b pb-2 border-gray-300">Key Information</h3>
                     <ul class="text-gray-700 space-y-2">
@@ -154,84 +143,84 @@ Car and Motorcycle License, Dungeons & Dragons</span>
         </div>
     </section>
 
-    <!-- 3. Gallery Section -->
-  <section id="gallery" class="py-16 md:py-24 bg-gray-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="section-title text-gray-900">Gallery</h2>
+    <section id="gallery" class="py-16 md:py-24 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title text-gray-900">Gallery</h2>
 
-        <div class="mb-12 hidden" id="acting-reel-container">
-            <h3 class="text-2xl font-semibold mb-4 text-gray-800">Current Acting Reel</h3>
-            <div class="reel-container shadow-2xl">
-                <iframe 
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                    title="Your Acting Reel" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen
-                    loading="lazy"
-                ></iframe>
+            <div class="mb-12" id="acting-reel-container">
+                <h3 class="text-2xl font-semibold mb-4 text-gray-800">Current Acting Reel</h3>
+                <div class="reel-container shadow-2xl">
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://youtu.be/ikJPBN_cXyY?si=V1Kby2q1Uz5Pog4e" 
+                        title="Your Acting Reel" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen
+                        loading="lazy"
+                    ></iframe>
+                    </div>
             </div>
-        </div>
-        
-        <div class="mt-16">
-            <h3 class="text-2xl font-semibold mb-6 text-gray-800">Gallery & Stills</h3>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                
-                <div 
-                    class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-300 cursor-pointer"
-                    onclick="openLightbox('./images/headshot2.jpg')"
-                >
-                    <img 
-                        src="./images/headshot2.jpg" 
-                        alt="Commercial Still"
-                        class="w-full h-auto object-cover aspect-[3/2]"
-                        onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=IMAGE+headshot2.jpg+NOT+FOUND';"
+            
+            <div class="mt-16">
+                <h3 class="text-2xl font-semibold mb-6 text-gray-800">Headshots & Stills</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    
+                    <div 
+                        class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-300 cursor-pointer"
+                        onclick="openLightbox('./images/headshot2.jpg')"
                     >
-                </div>
+                        <img 
+                            src="./images/headshot2.jpg" 
+                            alt="Commercial Still"
+                            class="w-full h-auto object-cover aspect-[3/2]"
+                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=IMAGE+headshot2.jpg+NOT+FOUND';"
+                        >
+                    </div>
 
-                <div 
-                    class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-300 cursor-pointer"
-                    onclick="openLightbox('./images/headshot3.jpg')"
-                >
-                    <img 
-                        src="./images/headshot3.jpg" 
-                        alt="Dramatic Scene Still"
-                        class="w-full h-auto object-cover aspect-[3/2]"
-                        onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=IMAGE+headshot3.jpg+NOT+FOUND';"
+                    <div 
+                        class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-300 cursor-pointer"
+                        onclick="openLightbox('./images/headshot3.jpg')"
                     >
-                </div>
+                        <img 
+                            src="./images/headshot3.jpg" 
+                            alt="Dramatic Scene Still"
+                            class="w-full h-auto object-cover aspect-[3/2]"
+                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=IMAGE+headshot3.jpg+NOT+FOUND';"
+                        >
+                    </div>
 
-                <div 
-                    class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-300 cursor-pointer"
-                    onclick="openLightbox('./images/headshot.jpg')"
-                >
-                    <img 
-                        src="./images/headshot.jpg" 
-                        alt="Portrait Look"
-                        class="w-full h-auto object-cover aspect-[3/2]"
-                        onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=IMAGE+headshot.jpg+NOT+FOUND';"
+                    <div 
+                        class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-300 cursor-pointer"
+                        onclick="openLightbox('./images/headshot.jpg')"
                     >
-                </div>
+                        <img 
+                            src="./images/headshot.jpg" 
+                            alt="Portrait Look"
+                            class="w-full h-auto object-cover aspect-[3/2]"
+                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=IMAGE+headshot.jpg+NOT+FOUND';"
+                        >
+                    </div>
 
-                <div 
-                    class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-300 cursor-pointer"
-                    onclick="openLightbox('./images/headshot4.jpg')"
-                >
-                    <img 
-                        src="./images/headshot4.jpg" 
-                        alt="Portrait/Second Look"
-                        class="w-full h-auto object-cover aspect-[3/2]"
-                        onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=IMAGE+headshot4.jpg+NOT+FOUND';"
+                    <div 
+                        class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-300 cursor-pointer"
+                        onclick="openLightbox('./images/headshot4.jpg')"
                     >
+                        <img 
+                            src="./images/headshot4.jpg" 
+                            alt="Portrait/Second Look"
+                            class="w-full h-auto object-cover aspect-[3/2]"
+                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=IMAGE+headshot4.jpg+NOT+FOUND';"
+                        >
+                    </div>
                 </div>
             </div>
+
         </div>
+    </section>
 
-    </div>
-</section>
-
-    <!-- 4. Credits Section -->
-   <section id="credits" class="py-16 md:py-24 bg-white">
+    <section id="credits" class="py-16 md:py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="section-title text-gray-900">Résumé & Credits</h2>
         
@@ -254,7 +243,7 @@ Car and Motorcycle License, Dungeons & Dragons</span>
                     <li class="border-b pb-2">
                         <p class="font-semibold">THE GREAT DIVIDE</p>
                         <p class="text-sm italic">Torgo (Supporting) / Dir. John Skipp</p>
-                    </li>                 
+                    </li> 
                 </ul>
             </div>
             
@@ -342,19 +331,16 @@ Car and Motorcycle License, Dungeons & Dragons</span>
         </div>
 
     </div>
-</section>
+    </section>
     
-    <!-- 5. Contact Section (UPDATED) -->
     <section id="contact" class="py-16 md:py-24 bg-gray-900 text-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="section-title text-white">Representation & Contact</h2>
 
             <div class="space-y-10">
                 
-                <!-- Agent Contact Block -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     
-                    <!-- Agent -->
                     <div class="p-6 bg-gray-800 rounded-xl shadow-xl border border-blue-600/50">
                         <h3 class="text-xl font-bold mb-2 text-blue-400">Theatrical Agent</h3>
                         <p class="text-lg font-semibold mb-2">
@@ -366,35 +352,29 @@ Car and Motorcycle License, Dungeons & Dragons</span>
                         <p class="font-medium text-blue-300">Phone: (503) 708-8696</p>
                     </div>
 
-                <!-- Personal Contact Card (NEW) -->
-                <div class="p-6 bg-gray-800 rounded-xl shadow-xl border border-blue-600/50">
+                    <div class="p-6 bg-gray-800 rounded-xl shadow-xl border border-blue-600/50">
 
-                     <h3 class="text-xl font-bold mb-2 text-blue-400">Direct Personal Contact (General Inquiries)</h3>
+                        <h3 class="text-xl font-bold mb-2 text-blue-400">Direct Personal Contact (General Inquiries)</h3>
                         <p class="text-lg font-semibold mb-2">
                         </p>
                         <p class="mt-3 font-medium text-blue-300">Email: <a href="mailto:zerofeeney@gmail.com" class="hover:underline">zerofeeney@gmail.com</a></p>
-                       <p class="font-medium text-blue-300">Phone: (503) 729-3565</p>
-                             </div>
+                        <p class="font-medium text-blue-300">Phone: (503) 729-3565</p>
                     </div>
                 </div>
 
-                <!-- Professional Links Card (Existing) -->
                 <div class="hidden p-6 bg-gray-800 rounded-xl shadow-xl border border-gray-700">
                     <h4 class="text-xl font-bold mb-4 text-blue-300">Professional Profiles</h4>
                     <div class="grid grid-cols-2 sm:grid-cols-4 gap-y-4 gap-x-6">
 
-                        <!-- Instagram -->
                         <a href="https://www.instagram.com/zerofeeney/" target="_blank" class="text-gray-400 hover:text-blue-500 transition duration-300">Instagram</a>
-                <span class="text-gray-600">|</span> 
-                       </a>
+                        <span class="text-gray-600">|</span> 
+                        
 
-                         <!-- Harris -->
-                         <a href="https://www.harristalentagency.com/actors-he/zero-feeney" target="_blank" class="flex items-center space-x-2 text-gray-300 hover:text-pink-400 transition duration-300 font-medium">
+                        <a href="https://www.harristalentagency.com/actors-he/zero-feeney" target="_blank" class="flex items-center space-x-2 text-gray-300 hover:text-pink-400 transition duration-300 font-medium">
                             <svg class="w-6 h-6 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M7.8 2h8.4C17.3 2 19 3.7 19 5.8v8.4c0 2.1-1.7 3.8-3.8 3.8H7.8C5.7 18 4 16.3 4 14.2V5.8C4 3.7 5.7 2 7.8 2zm-.2 2H5.8c-1.1 0-1.8.7-1.8 1.8v.2h2zm.2 12H16.2c1.1 0 1.8-.7 1.8-1.8v-.2h-2zm9.2-2.2v-8.4c0-1.1-.7-1.8-1.8-1.8h-.2v2zm-12.8 0h-2v-.2c0-1.1.7-1.8 1.8-1.8h.2zm11.2-1.2c0 2.2-1.8 4-4 4s-4-1.8-4-4 1.8-4 4-4 4 1.8 4 4zm-4 2.5c1.4 0 2.5-1.1 2.5-2.5s-1.1-2.5-2.5-2.5-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5z"/></svg>
                             <span class="truncate">Harris Talent</span>
                         </a>
                         
-                        <!-- Casting Networks (Placeholder) -->
                         <a href="https://app.castingnetworks.com/talent/public-profile/20f53cfc-95f5-11ec-b263-4bbdc48fa5ab" target="_blank" class="flex items-center space-x-2 text-gray-300 hover:text-green-400 transition duration-300 font-medium">
                             <svg class="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-2.07.81-3.96 2.15-5.36L12 10.5l-3.5 3.5c-.39.39-.39 1.02 0 1.41s1.02.39 1.41 0L12 12.33l2.88 2.88c.39.39 1.02.39 1.41 0s.39-1.02 0-1.41L13.41 11 15 9.41l2.15 2.15C17.92 14.04 18 15.11 18 16c0 4.08-3.05 7.44-7 7.93zM12 4.07c3.95.49 7 3.85 7 7.93 0 2.07-.81 3.96-2.15 5.36L12 13.5l3.5-3.5c.39-.39.39-1.02 0-1.41s-1.02-.39-1.41 0L12 11.67 9.12 8.79c-.39-.39-1.02-.39-1.41 0s-.39 1.02 0 1.41L10.59 13 9 14.59l-2.15-2.15C6.08 9.96 6 8.89 6 8c0-4.08 3.05-7.44 7-7.93z"/></svg>
                             <span class="truncate">Casting Networks</span>
@@ -406,14 +386,12 @@ Car and Motorcycle License, Dungeons & Dragons</span>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-gray-800 text-center py-6">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <p class="text-gray-400 text-sm">
                 &copy; 2025 Zero Feeney. All Rights Reserved.
             </p>
             <div class="mt-3 space-x-4">
-                <!-- Social Links Updated to Example URLs - These are now primarily displayed in the Contact Section for visibility -->
                 <a href="https://www.harristalentagency.com/actors-he/zero-feeney" target="_blank" class="text-gray-400 hover:text-blue-500 transition duration-300">Harris Talent</a>
                 <span class="text-gray-600">|</span>
                 <a href="https://www.instagram.com/zerofeeney/" target="_blank" class="text-gray-400 hover:text-blue-500 transition duration-300">Instagram</a>
@@ -423,83 +401,60 @@ Car and Motorcycle License, Dungeons & Dragons</span>
         </div>
     </footer>
 
-    <!-- JavaScript for Mobile Menu Toggle -->
     <script>
         document.getElementById('menu-button').addEventListener('click', function() {
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
         });
     </script>
-<div id="lightbox-modal" class="hidden fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4" onclick="closeLightbox()">
     
-    <div class="max-w-4xl max-h-full" onclick="event.stopPropagation()">
+    <div id="lightbox-modal" class="hidden fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4" onclick="closeLightbox()">
         
-        <img id="lightbox-image" src="" alt="Full-size image" class="rounded-lg shadow-2xl max-w-full max-h-[80vh] object-contain">
-        
-        <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white text-4xl font-light hover:text-gray-300 transition focus:outline-none">&times;</button>
-        
+        <div class="max-w-4xl max-h-full" onclick="event.stopPropagation()">
+            
+            <img id="lightbox-image" src="" alt="Full-size image" class="rounded-lg shadow-2xl max-w-full max-h-[80vh] object-contain">
+            
+            <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white text-4xl font-light hover:text-gray-300 transition focus:outline-none">&times;</button>
+            
+        </div>
     </div>
-</div>
-
     <script>
-    // Get the modal and image elements
-    const lightboxModal = document.getElementById('lightbox-modal');
-    const lightboxImage = document.getElementById('lightbox-image');
+        // Get the modal and image elements
+        const lightboxModal = document.getElementById('lightbox-modal');
+        const lightboxImage = document.getElementById('lightbox-image');
 
-    /**
-     * Opens the lightbox modal with the specified image source.
-     * @param {string} imageSrc - The path to the full-size image.
-     */
-    function openLightbox(imageSrc) {
-        // Set the source of the large image in the modal
-        lightboxImage.src = imageSrc;
-        
-        // Remove the 'hidden' class to make the modal visible (Tailwind utility)
-        lightboxModal.classList.remove('hidden');
-        
-        // Add a class to the body to prevent background scrolling
-        document.body.classList.add('overflow-hidden');
-    }
-
-    /**
-     * Closes the lightbox modal.
-     */
-    function closeLightbox() {
-        // Add the 'hidden' class to hide the modal
-        lightboxModal.classList.add('hidden');
-        
-        // Remove the class to re-enable background scrolling
-        document.body.classList.remove('overflow-hidden');
-    }
-
-    // Optional: Close the lightbox when the Escape key is pressed
-    document.addEventListener('keydown', function(event) {
-        if (event.key === 'Escape' && !lightboxModal.classList.contains('hidden')) {
-            closeLightbox();
+        /**
+        * Opens the lightbox modal with the specified image source.
+        * @param {string} imageSrc - The path to the full-size image.
+        */
+        function openLightbox(imageSrc) {
+            // Set the source of the large image in the modal
+            lightboxImage.src = imageSrc;
+            
+            // Remove the 'hidden' class to make the modal visible (Tailwind utility)
+            lightboxModal.classList.remove('hidden');
+            
+            // Add a class to the body to prevent background scrolling
+            document.body.classList.add('overflow-hidden');
         }
-    });
-</script>
+
+        /**
+        * Closes the lightbox modal.
+        */
+        function closeLightbox() {
+            // Add the 'hidden' class to hide the modal
+            lightboxModal.classList.add('hidden');
+            
+            // Remove the class to re-enable background scrolling
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        // Optional: Close the lightbox when the Escape key is pressed
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && !lightboxModal.classList.contains('hidden')) {
+                closeLightbox();
+            }
+        });
+    </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
