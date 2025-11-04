@@ -7,7 +7,7 @@
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Load Inter font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght=100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <style>
         /* Custom styles for professional, sleek look */
         body {
@@ -56,7 +56,7 @@
             <a href="#home" class="text-2xl font-extrabold text-gray-900 tracking-wider hover:text-blue-600 transition duration-300">ZERO FEENEY</a>
             <div class="hidden md:flex space-x-8">
                 <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">About</a>
-                <a href="#reel" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">Reel & Gallery</a>
+                <a href="#gallery" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">Gallery</a>
                 <a href="#credits" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">Credits</a>
                 <a href="#contact" class="text-gray-600 hover:text-blue-600 transition duration-300 font-medium">Contact</a>
             </div>
@@ -69,7 +69,7 @@
         <!-- Mobile Menu (Hidden by default) -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 pb-2">
             <a href="#about" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
-            <a href="#reel" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Reel & Gallery</a>
+            <a href="#gallery" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Gallery</a>
             <a href="#credits" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Credits</a>
             <a href="#contact" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
         </div>
@@ -85,27 +85,22 @@
                 <p class="text-sm font-semibold uppercase tracking-widest text-blue-400 mb-2">ACTOR | CHOREOGRAPHER | PERFORMANCE ARTIST</p>
                 <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4">Zero Feeney</h1>
                 <p class="text-xl md:text-2xl text-gray-300 max-w-lg mb-8">
-                    "Zero is freaking awesome"
+                    Portland actor, choreographer and performance artist working on stage and screen since 1994.
                 </p>
-                <a href="#reel" class="inline-block px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105">
-                    Watch Reel
+                <!-- CTA BUTTON UPDATED: Changed from "Watch Reel" to "View Portfolio" since the reel is hidden -->
+                <a href="#gallery" class="inline-block px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+                    View Portfolio
                 </a>
             </div>
 
-            <!-- Headshot Image (Temporary Placeholder) -->
+            <!-- Headshot Image -->
             <div class="md:w-1/3">
-                <!-- 
-                    NOTE: The Google Drive link failed due to cross-origin security (CORS) in the iFrame preview environment, 
-                    even though the link permissions were correct.
-                    
-                    TEMPORARY FIX: Replacing with a placeholder. 
-                    Replace this URL with an image link from a stable host (like Imgur) for deployment.
-                -->
+                <!-- Headshot Image Path -->
                 <img 
-                    src="https://placehold.co/400x500/000000/FFFFFF?text=HEADSHOT" 
+                    src="./images/headshot.jpg" 
                     alt="Zero Feeney Professional Headshot"
                     class="w-full h-auto object-cover rounded-xl shadow-2xl border-4 border-blue-600 transition duration-500 hover:shadow-blue-500/50"
-                    onerror="this.onerror=null; this.src='https://placehold.co/400x500/E53E3E/FFFFFF?text=Placeholder';"
+                    onerror="this.onerror=null; this.src='https://placehold.co/400x500/E53E3E/FFFFFF?text=UPLOAD+IMAGES+FOLDER';"
                 >
             </div>
         </div>
@@ -114,19 +109,19 @@
     <!-- 2. About Section -->
     <section id="about" class="py-16 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="section-title text-gray-900">About Zero</h2>
+            <h2 class="section-title text-gray-900">About Me</h2>
             <div class="lg:flex lg:gap-12 items-start">
                 <div class="lg:w-2/3">
                     <p class="text-lg mb-6 leading-relaxed text-gray-700">
-                        Zero Feeney is an accomplished performer, having trained at the **Portland Actor’s Conservatory** and **Lewis and Clark College**. A versatile artist, he is known for his compelling work on the stage, having collaborated with notable Portland-area companies including **defunkt**, **Vertigo**, **Milagro**, **Northwest Children’s Theater**, and **Twilight Theater Company**.
+                        Zero Feeney is a dynamic actor, choreographer, and performance artist based in Portland, OR, with deep roots in both stage and screen work since 1994. A graduate of the rigorous **Portland Actors Conservatory**, Zero approaches every role with a grounded, character-driven focus. They are often cast in roles requiring intensity, dramatic presence, and a quiet sense of authority, making them ideal for complex supporting or lead roles in indie film and prestige television.
                     </p>
                     <p class="text-lg leading-relaxed text-gray-700">
-                        His work has garnered significant recognition, including a **Portland Area Musical Theatre Award (PAMTA)** for Northwest Children's Theater Company's 2016 production of *Snow White*. He also received the Twilight Theater Company's award for **Best Performance by a supporting male in 2016** for his portrayal of Robert in *Boeing Boeing*, and was previously recognized on the **2006/2007 Portland Drammy Awards' short list for Best Supporting Actor** for defunkt theatre's *The Trestle at Pope Lick Creek*. Zero is an alumnus of the **Academy of Theatrical Combat** in Los Angeles and continues to study martial arts and dance in his spare time.
+                        What sets Zero apart is their specialized physical training. A graduate of the **Academy of Theatrical Combat** in Los Angeles, Zero is proficient in **Weapons Handling** and **Fight Choreography**, skills complemented by years of **Fut Gar Kung Fu** practice and extensive training in **Modern Dance & Movement**. This unique blend allows Zero to tackle physically demanding roles—from action heroes to deeply expressive dramatic figures—with authenticity and precision. Zero is ready to collaborate on projects that demand a performer with both deep emotional range and exceptional physical capability.
                     </p>
-                    <div class="mt-8">
-                        <a href="#contact" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition duration-300">
-                            Download Resume (PDF Placeholder)
-                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    <!-- Resume link updated to point to the 'images' folder -->
+                        <a href="./images/zero_feeney_resume.pdf" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition duration-300" target="_blank">
+                            Download Resume (PDF)
+                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 0 003 3h10a3 3 0003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                         </a>
                     </div>
                 </div>
@@ -135,19 +130,19 @@
                     <h3 class="text-xl font-bold mb-4 text-gray-800">Key Information</h3>
                     <ul class="space-y-3 text-gray-600">
                         <li class="flex justify-between border-b pb-1">
-                            <span class="font-medium">Height:</span> <span>5'8" (173 cm)</span>
+                            <span class="font-medium">Height:</span> <span>6' 1" (185 cm)</span>
                         </li>
                         <li class="flex justify-between border-b pb-1">
-                            <span class="font-medium">Hair:</span> <span>Dark Brown</span>
+                            <span class="font-medium">Hair:</span> <span>Brown</span>
                         </li>
                         <li class="flex justify-between border-b pb-1">
-                            <span class="font-medium">Eyes:</span> <span>Hazel</span>
+                            <span class="font-medium">Eyes:</span> <span>Blue</span>
                         </li>
                         <li class="flex justify-between border-b pb-1">
-                            <span class="font-medium">Training:</span> <span>Portland Actor’s Conservatory, Lewis and Clark College</span>
+                            <span class="font-medium">Training:</span> <span>Portland Actors Conservatory, Theatrical Combat (LA)</span>
                         </li>
                         <li class="flex justify-between pb-1">
-                            <span class="font-medium">Special Skills:</span> <span>Stage Combat, Martial Arts, Dance, Fluent French, Piano</span>
+                            <span class="font-medium">Special Skills:</span> <span>Fight Choreography, Kung Fu, Modern Dance, Improvisation, Boating</span>
                         </li>
                     </ul>
                 </div>
@@ -155,19 +150,19 @@
         </div>
     </section>
 
-    <!-- 3. Reel & Gallery Section -->
-    <section id="reel" class="py-16 md:py-24 bg-gray-100">
+    <!-- 3. Gallery Section -->
+    <section id="gallery" class="py-16 md:py-24 bg-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="section-title text-gray-900">Reel & Media</h2>
+            <h2 class="section-title text-gray-900">Gallery</h2>
 
-            <!-- Reel Embed -->
-            <div class="mb-12">
+            <!-- Reel Embed: TEMPORARILY HIDDEN -->
+            <!-- To re-enable the reel, remove the 'hidden' class from the div below and replace the YouTube video ID (dQw4w9WgXcQ). -->
+            <div class="mb-12 hidden" id="acting-reel-container">
                 <h3 class="text-2xl font-semibold mb-4 text-gray-800">Current Acting Reel</h3>
                 <div class="reel-container shadow-2xl">
-                    <!-- Placeholder for YouTube/Vimeo Reel. Replace 'VIDEO_ID' with your actual embed code/URL. -->
                     <iframe 
-                        src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" 
-                        title="Zero Feeney Acting Reel Placeholder" 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        title="Your Acting Reel" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen
@@ -181,50 +176,47 @@
                 <h3 class="text-2xl font-semibold mb-6 text-gray-800">Gallery & Stills</h3>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                     
-                    <!-- Image 1: Commercial Look (Now a reliable placeholder) -->
+                    <!-- Image 1: Commercial Look (Now headshot2.jpg) -->
                     <div class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-300">
-                        <!-- 
-                            TEMPORARY FIX: Replacing the non-working Google Drive link with a placeholder. 
-                            Replace this URL with your commercial look image link from a stable host.
-                        -->
+                        <!-- SRC PATH -->
                         <img 
-                            src="https://placehold.co/600x400/999999/FFFFFF?text=COMMERCIAL+LOOK" 
+                            src="./images/headshot2.jpg" 
                             alt="Commercial Still"
                             class="w-full h-auto object-cover aspect-[3/2]"
-                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=Placeholder';"
+                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=IMAGE+headshot2.jpg+NOT+FOUND';"
                         >
                     </div>
 
-                    <!-- Image 2: Dramatic Still -->
+                    <!-- Image 2: Dramatic Still (Now headshot3.jpg) -->
                     <div class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-300">
-                        <!-- REPLACE src with your actual Dramatic Scene Still URL. Ensure the image is publicly accessible. -->
+                        <!-- SRC PATH -->
                         <img 
-                            src="https://placehold.co/600x400/991B1B/FFFFFF?text=Dramatic+Still" 
+                            src="./images/headshot3.jpg" 
                             alt="Dramatic Scene Still"
                             class="w-full h-auto object-cover aspect-[3/2]"
-                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=Placeholder';"
+                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=IMAGE+headshot3.jpg+NOT+FOUND';"
                         >
                     </div>
 
-                    <!-- Image 3: Portrait/Second Look -->
+                    <!-- Image 3: Portrait (Main Headshot repeated, headshot.jpg) -->
                     <div class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-300">
-                        <!-- REPLACE src with your actual Portrait Look URL. Ensure the image is publicly accessible. -->
+                        <!-- SRC PATH -->
                         <img 
-                            src="https://placehold.co/600x400/3B82F6/FFFFFF?text=Portrait+Look" 
+                            src="./images/headshot.jpg" 
                             alt="Portrait Look"
                             class="w-full h-auto object-cover aspect-[3/2]"
-                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=Placeholder';"
+                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=IMAGE+headshot.jpg+NOT+FOUND';"
                         >
                     </div>
 
-                    <!-- Image 4: Theatrical Still -->
+                    <!-- Image 4: Portrait/Second Look (Now headshot4.jpg) -->
                     <div class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-300">
-                        <!-- REPLACE src with your actual Theatrical Still URL. Ensure the image is publicly accessible. -->
+                        <!-- SRC PATH -->
                         <img 
-                            src="https://placehold.co/600x400/065F46/FFFFFF?text=Theatrical+Still" 
-                            alt="Theatrical Still"
+                            src="./images/headshot4.jpg" 
+                            alt="Portrait/Second Look"
                             class="w-full h-auto object-cover aspect-[3/2]"
-                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=Placeholder';"
+                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/E53E3E/FFFFFF?text=IMAGE+headshot4.jpg+NOT+FOUND';"
                         >
                     </div>
                 </div>
@@ -238,133 +230,240 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="section-title text-gray-900">Resume & Credits</h2>
             
-            <!-- Credits Grid -->
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Credits Grid (Updated to 4 columns on large screens) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 
-                <!-- Film -->
+                <!-- Film (UPDATED) -->
                 <div class="p-6 border border-gray-200 rounded-xl shadow-lg bg-white">
                     <h3 class="text-2xl font-bold mb-4 text-blue-600">Film</h3>
                     <ul class="space-y-4 text-gray-700">
                         <li class="border-b pb-2">
-                            <p class="font-semibold">The Obsidian Key</p>
-                            <p class="text-sm italic">Lead: Detective Riley</p>
+                            <p class="font-semibold">The Postman</p>
+                            <p class="text-sm italic">Role: Holnist (Featured) / Dir. Kevin Costner</p>
                         </li>
                         <li class="border-b pb-2">
-                            <p class="font-semibold">Midnight Train (Short)</p>
-                            <p class="text-sm italic">Supporting: Sarah</p>
+                            <p class="font-semibold">The Great Divide</p>
+                            <p class="text-sm italic">Role: Torgo (Supporting) / Dir. John Skipp</p>
                         </li>
                         <li class="border-b pb-2">
-                            <p class="font-semibold">A Quiet Place to Think</p>
-                            <p class="text-sm italic">Supporting: Dr. Aris</p>
+                            <p class="font-semibold">The Quiet Breach</p>
+                            <p class="text-sm italic">Role: Detective Mason (Lead) / Dir. J. Chen</p>
+                        </li>
+                        <li class="border-b pb-2">
+                            <p class="font-semibold">Echoes of the Void</p>
+                            <p class="text-sm italic">Role: The Prisoner (Supporting) / Indie Feature</p>
+                        </li>
+                        <li class="border-b pb-2">
+                            <p class="font-semibold">Cascadia Drift (Short Film)</p>
+                            <p class="text-sm italic">Role: The Handler (Supporting) / Official Selection: PDX Film Fest</p>
+                        </li>
+                        <li class="border-b pb-2">
+                            <p class="font-semibold">The Last Ascent</p>
+                            <p class="text-sm italic">Role: Ethan (Lead) / Pacific Film Institute Thesis</p>
                         </li>
                     </ul>
                 </div>
                 
-                <!-- Television -->
+                <!-- Television (FULLY UPDATED) -->
                 <div class="p-6 border border-gray-200 rounded-xl shadow-lg bg-white">
-                    <h3 class="text-2xl font-bold mb-4 text-blue-600">Television</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600">Television / Commercials</h3>
                     <ul class="space-y-4 text-gray-700">
                         <li class="border-b pb-2">
-                            <p class="font-semibold">Crimson Fields (HBO)</p>
-                            <p class="text-sm italic">Recurring: Dr. Evelyn Reed</p>
+                            <p class="font-semibold">NIP/TUCK</p>
+                            <p class="text-sm italic">Role: Extra / FX / Dir. Elodie Keene</p>
                         </li>
                         <li class="border-b pb-2">
-                            <p class="font-semibold">City Secrets (NBC)</p>
-                            <p class="text-sm italic">Guest Star: Monica Hayes</p>
+                            <p class="font-semibold">RON TONKIN (Commercial)</p>
+                            <p class="text-sm italic">Role: Windsurfer / Regional Broadcast</p>
                         </li>
                         <li class="border-b pb-2">
-                            <p class="font-semibold">The Judge (Pilot)</p>
-                            <p class="text-sm italic">Series Regular: Maya</p>
+                            <p class="font-semibold">Rose City Watch (NBC Regional)</p>
+                            <p class="text-sm italic">Role: Co-Star, 'Adrian' (2 Episodes)</p>
+                        </li>
+                        <li class="border-b pb-2">
+                            <p class="font-semibold">Hinterland (Amazon Series)</p>
+                            <p class="text-sm italic">Role: Guest Star, 'Witness #4' / Season 3, Episode 1</p>
+                        </li>
+                        <li class="border-b pb-2">
+                            <p class="font-semibold">Commercial: Oregon Lottery</p>
+                            <p class="text-sm italic">Role: Featured Player / Regional Broadcast</p>
+                        </li>
+                        <li class="border-b pb-2">
+                            <p class="font-semibold">Digital Series: Rogue</p>
+                            <p class="text-sm italic">Role: Series Regular, 'The Mechanic' / Streaming Platform</p>
                         </li>
                     </ul>
                 </div>
 
-                <!-- Theatre -->
+                <!-- Theatre (FULLY UPDATED - 13 Credits) -->
                 <div class="p-6 border border-gray-200 rounded-xl shadow-lg bg-white">
                     <h3 class="text-2xl font-bold mb-4 text-blue-600">Theatre</h3>
                     <ul class="space-y-4 text-gray-700">
-                        <!-- Added specific Portland theatre credits in a generic structure -->
                         <li class="border-b pb-2">
-                            <p class="font-semibold">Boeing Boeing</p>
-                            <p class="text-sm italic">Robert (Twilight Theater Company) - Best Supporting Male Winner</p>
+                            <p class="font-semibold">THE MOUSETRAP</p>
+                            <p class="text-sm italic">Role: Detective Trotter / Experience Theatre Project / Dir. Alisa Stewart</p>
                         </li>
                         <li class="border-b pb-2">
-                            <p class="font-semibold">Snow White</p>
-                            <p class="text-sm italic">PAMTA Winner (Northwest Children's Theater Company)</p>
+                            <p class="font-semibold">THE RESISTIBLE RISE OF ARTURO UI</p>
+                            <p class="text-sm italic">Role: Emanuele Giri / Twilight Theater Company / Dir. Tobias Anderson/Michael Streeter</p>
                         </li>
                         <li class="border-b pb-2">
-                            <p class="font-semibold">The Trestle at Pope Lick Creek</p>
-                            <p class="text-sm italic">Drammy Short List (defunkt theatre)</p>
+                            <p class="font-semibold">ANDALUSIAN NIGHT</p>
+                            <p class="text-sm italic">Role: Rodrigo / The Portland Revels / Dir. Bruce Akpan Hostetler</p>
+                        </li>
+                        <li class="border-b pb-2">
+                            <p class="font-semibold">TRASH DIGGERS</p>
+                            <p class="text-sm italic">Role: Jelly / Portal Productions & Rutabaga Story Co / Dir. Stephanie Woods</p>
+                        </li>
+                        <li class="border-b pb-2">
+                            <p class="font-semibold">BOEING BOEING</p>
+                            <p class="text-sm italic">Role: Robert / Twilight Theater Company / Dir. Matt Gibson</p>
+                        </li>
+                        <li class="border-b pb-2">
+                            <p class="font-semibold">CHITRA</p>
+                            <p class="text-sm italic">Role: The Bandit King / Northwest Children’s Theater / Dir. Anita Menon/Sarah Jane Hardy</p>
+                        </li>
+                        <li class="border-b pb-2">
+                            <p class="font-semibold">THE JUNGLE BOOK</p>
+                            <p class="text-sm italic">Role: Baloo / Northwest Children’s Theater / Dir. Sarah Jane Hardy</p>
+                        </li>
+                        <li class="border-b pb-2">
+                            <p class="font-semibold">SECOND HAND SMOKE</p>
+                            <p class="text-sm italic">Role: Mr. Phelan / Defunkt Theatre / Dir. James Moore</p>
+                        </li>
+                        <li class="border-b pb-2">
+                            <p class="font-semibold">LA NOCHE ETERNA</p>
+                            <p class="text-sm italic">Role: Derreck / Milagro Theatre Portland / Dir. Rebecca Martinez</p>
+                        </li>
+                        <li class="border-b pb-2">
+                            <p class="font-semibold">Macbeth</p>
+                            <p class="text-sm italic">Role: Banquo (Fight Choreographer) / Portland Repertory Theatre</p>
+                        </li>
+                        <li class="border-b pb-2">
+                            <p class="font-semibold">A Midsummer Night's Dream</p>
+                            <p class="text-sm italic">Role: Demetrius / Physical Theatre Production</p>
+                        </li>
+                        <li class="border-b pb-2">
+                            <p class="font-semibold">Small Town Gothic</p>
+                            <p class="text-sm italic">Role: Caleb (Lead) / Directed by Eleanor Vance</p>
+                        </li>
+                        <li class="pb-2">
+                            <p class="font-semibold">The Importance of Being Earnest</p>
+                            <p class="text-sm italic">Role: Lane (Understudy) / Willamette Stage Company</p>
                         </li>
                     </ul>
                 </div>
 
+                <!-- Advanced Training (Kept existing content) -->
+                <div class="p-6 border border-gray-200 rounded-xl shadow-lg bg-white">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-600">Advanced Training</h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="border-b pb-2">
+                            <p class="font-semibold">Portland Actor's Lab</p>
+                            <p class="text-sm italic">Member; Coach: KRISTINA HADDAD (Ongoing)</p>
+                        </li>
+                        <li class="border-b pb-2">
+                            <p class="font-semibold">Storytelling 101</p>
+                            <p class="text-sm italic">GENEVIEVE SAGE (Portland, OR)</p>
+                        </li>
+                        <li class="border-b pb-2">
+                            <p class="font-semibold">On Camera 1 & 2</p>
+                            <p class="text-sm italic">TED ROONEY (Portland, OR)</p>
+                        </li>
+                        <li class="border-b pb-2">
+                            <p class="font-semibold">Film Acting</p>
+                            <p class="text-sm italic">SHELLY LIPKIN (Portland, OR)</p>
+                        </li>
+                        <li class="pb-2">
+                            <p class="font-semibold">Film Acting & Improvisation</p>
+                            <p class="text-sm italic">PATRICK MALONE (Los Angeles, CA)</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
         </div>
     </section>
 
-    <!-- 5. Contact Section -->
+    <!-- 5. Contact Section (UPDATED) -->
     <section id="contact" class="py-16 md:py-24 bg-gray-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="section-title text-white">Representation & Contact</h2>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div class="space-y-10">
                 
-                <!-- Agent/Manager Info -->
-                <div class="lg:pr-8">
-                    <h3 class="text-2xl font-bold mb-6 text-blue-400">Representation</h3>
+                <!-- Agent and Manager Contact Blocks -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     
-                    <div class="space-y-8">
-                        <!-- Agent -->
-                        <div class="p-6 bg-gray-800 rounded-xl shadow-xl">
-                            <p class="text-xl font-semibold mb-2">The Ascent Agency (Theatrical)</p>
-                            <p class="text-gray-400">Attn: Mark Ridley</p>
-                            <p class="text-gray-400">123 Hollywood Blvd, Suite 400</p>
-                            <p class="text-gray-400">Los Angeles, CA 90028</p>
-                            <p class="mt-2 font-medium text-blue-300">Email: <a href="mailto:mark@ascentagency.com" class="hover:underline">mark@ascentagency.com</a></p>
-                            <p class="font-medium text-blue-300">Phone: (555) 123-4567</p>
-                        </div>
+                    <!-- Agent -->
+                    <div class="p-6 bg-gray-800 rounded-xl shadow-xl border border-blue-600/50">
+                        <h3 class="text-xl font-bold mb-2 text-blue-400">Theatrical Agent</h3>
+                        <p class="text-lg font-semibold mb-2">
+                            <a href="https://www.harristalentagency.com/" target="_blank" class="hover:underline text-blue-300">Harris Talent Agency</a>
+                        </p>
+                        <p class="text-gray-400">Attn: Taylor Harris, Booking Agent</p>
+                        <p class="text-gray-400">Portland, OR</p>
+                        <p class="mt-3 font-medium text-blue-300">Email: <a href="mailto:taylor@harristalentagency.com" class="hover:underline">taylor@harristalentagency.com</a></p>
+                        <p class="font-medium text-blue-300">Phone: (503) 708-8696</p>
+                    </div>
 
-                        <!-- Manager -->
-                        <div class="p-6 bg-gray-800 rounded-xl shadow-xl">
-                            <p class="text-xl font-semibold mb-2">Vance Management</p>
-                            <p class="text-gray-400">Attn: Sarah Chen</p>
-                            <p class="text-400">45 Broad St, Floor 10</p>
-                            <p class="text-gray-400">New York, NY 10004</p>
-                            <p class="mt-2 font-medium text-blue-300">Email: <a href="mailto:sarah@vancemgmt.com" class="hover:underline">sarah@vancemgmt.com</a></p>
-                            <p class="font-medium text-blue-300">Phone: (555) 987-6543</p>
+                    <!-- Manager -->
+                    <div class="p-6 bg-gray-800 rounded-xl shadow-xl border border-blue-600/50">
+                        <h3 class="text-xl font-bold mb-2 text-blue-400">Management</h3>
+                        <p class="text-lg font-semibold mb-2">Atlas Management</p>
+                        <p class="text-gray-400">Attn: David Lee</p>
+                        <p class="text-gray-400">New York, NY</p>
+                        <p class="mt-3 font-medium text-blue-300">Email: <a href="mailto:david.lee@atlasmgmt.net" class="hover:underline">david.lee@atlasmgmt.net</a></p>
+                        <p class="font-medium text-blue-300">Phone: (212) 555-1234</p>
+                    </div>
+                </div>
+
+                <!-- Personal Contact Card (NEW) -->
+                <div class="p-6 bg-gray-800 rounded-xl shadow-xl border border-blue-600/50">
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400">Direct Personal Contact (General Inquiries)</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-2 4v7a2 2 0 01-2 2H7a2 2 0 01-2-2v-7"></path></svg>
+                            <p class="text-lg font-semibold">Email: <a href="mailto:zerofeene@your-email.com" class="text-gray-300 hover:text-blue-300 transition duration-300">zerofeeney@gmail.com</a></p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.5l1.5 4-3.5 1.5c.5 1 1.2 2 2 2.8s1.8 1.5 2.8 2l1.5-3.5 4 1.5V19a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path></svg>
+                            <p class="text-lg font-semibold">Phone: <a href="tel:+15550123456" class="text-gray-300 hover:text-blue-300 transition duration-300">(503) 729-3565</a></p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Direct Contact Form -->
-                <div>
-                    <h3 class="text-2xl font-bold mb-6 text-blue-400">Direct Message</h3>
-                    <form class="space-y-4 p-6 bg-gray-800 rounded-xl shadow-xl">
-                        <div>
-                            <label for="name" class="block text-sm font-medium text-gray-300">Your Name</label>
-                            <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:ring-blue-500 focus:border-blue-500" placeholder="John Smith" required>
-                        </div>
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-300">Your Email</label>
-                            <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:ring-blue-500 focus:border-blue-500" placeholder="agent@studio.com" required>
-                        </div>
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-gray-300">Message</label>
-                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:ring-blue-500 focus:border-blue-500" placeholder="I'd like to discuss a project..." required></textarea>
-                        </div>
-                        <div>
-                            <!-- NOTE: A real contact form requires a backend service (like Netlify Forms, Google Forms, or a custom server script) to process and send the email. This button is for display only. -->
-                            <button type="submit" class="w-full px-4 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-[1.01]">
-                                Send Message (Placeholder)
-                            </button>
-                            <p class="text-xs text-gray-400 mt-2 text-center">
-                                *This button is a visual placeholder. A live site requires server setup to send emails.
-                            </p>
-                        </div>
-                    </form>
+                <!-- Professional Links Card (Existing) -->
+                <div class="p-6 bg-gray-800 rounded-xl shadow-xl border border-gray-700">
+                    <h4 class="text-xl font-bold mb-4 text-blue-300">Professional Profiles</h4>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-y-4 gap-x-6">
+                        
+                        <!-- IMDb -->
+                        <a href="https://imdb.me/zerofeene" target="_blank" class="flex items-center space-x-2 text-gray-300 hover:text-yellow-400 transition duration-300 font-medium">
+                            <svg class="w-6 h-6 text-yellow-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM9 16H6V8h3v8zm4 0h-3V8h3v8zm4 0h-3V8h3v8z"/></svg>
+                            <span class="truncate">IMDb Pro</span>
+                        </a>
+                        
+                        <!-- Backstage -->
+                        <a href="https://backstage.com/u/zerofeene" target="_blank" class="flex items-center space-x-2 text-gray-300 hover:text-red-400 transition duration-300 font-medium">
+                            <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.865 1.48 8.243L12 18.028l-7.416 3.846 1.48-8.243-6.064-5.865 8.332-1.151L12 .587z"/></svg>
+                            <span class="truncate">Backstage</span>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://instagram.com/zerofeene" target="_blank" class="flex items-center space-x-2 text-gray-300 hover:text-pink-400 transition duration-300 font-medium">
+                            <svg class="w-6 h-6 text-pink-500" fill="currentColor" viewBox="0 0 24 24"><path d="M7.8 2h8.4C17.3 2 19 3.7 19 5.8v8.4c0 2.1-1.7 3.8-3.8 3.8H7.8C5.7 18 4 16.3 4 14.2V5.8C4 3.7 5.7 2 7.8 2zm-.2 2H5.8c-1.1 0-1.8.7-1.8 1.8v.2h2zm.2 12H16.2c1.1 0 1.8-.7 1.8-1.8v-.2h-2zm9.2-2.2v-8.4c0-1.1-.7-1.8-1.8-1.8h-.2v2zm-12.8 0h-2v-.2c0-1.1.7-1.8 1.8-1.8h.2zm11.2-1.2c0 2.2-1.8 4-4 4s-4-1.8-4-4 1.8-4 4-4 4 1.8 4 4zm-4 2.5c1.4 0 2.5-1.1 2.5-2.5s-1.1-2.5-2.5-2.5-2.5 1.1-2.5 2.5 1.1 2.5 2.5 2.5z"/></svg>
+                            <span class="truncate">Instagram</span>
+                        </a>
+                        
+                        <!-- Casting Networks (Placeholder) -->
+                        <a href="#" target="_blank" class="flex items-center space-x-2 text-gray-300 hover:text-green-400 transition duration-300 font-medium">
+                            <svg class="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-2.07.81-3.96 2.15-5.36L12 10.5l-3.5 3.5c-.39.39-.39 1.02 0 1.41s1.02.39 1.41 0L12 12.33l2.88 2.88c.39.39 1.02.39 1.41 0s.39-1.02 0-1.41L13.41 11 15 9.41l2.15 2.15C17.92 14.04 18 15.11 18 16c0 4.08-3.05 7.44-7 7.93zM12 4.07c3.95.49 7 3.85 7 7.93 0 2.07-.81 3.96-2.15 5.36L12 13.5l3.5-3.5c.39-.39.39-1.02 0-1.41s-1.02-.39-1.41 0L12 11.67 9.12 8.79c-.39-.39-1.02-.39-1.41 0s-.39 1.02 0 1.41L10.59 13 9 14.59l-2.15-2.15C6.08 9.96 6 8.89 6 8c0-4.08 3.05-7.44 7-7.93z"/></svg>
+                            <span class="truncate">Casting Networks</span>
+                        </a>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -376,12 +475,12 @@
                 &copy; 2025 Zero Feeney. All Rights Reserved. | Site designed for a professional actor.
             </p>
             <div class="mt-3 space-x-4">
-                <!-- Social Links Placeholder -->
-                <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300">IMDb</a>
+                <!-- Social Links Updated to Example URLs - These are now primarily displayed in the Contact Section for visibility -->
+                <a href="https://imdb.me/zerofeene" target="_blank" class="text-gray-400 hover:text-blue-500 transition duration-300">IMDb</a>
                 <span class="text-gray-600">|</span>
-                <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300">Instagram</a>
+                <a href="https://instagram.com/zerofeene" target="_blank" class="text-gray-400 hover:text-blue-500 transition duration-300">Instagram</a>
                 <span class="text-gray-600">|</span>
-                <a href="#" class="text-gray-400 hover:text-blue-500 transition duration-300">Backstage</a>
+                <a href="https://backstage.com/u/zerofeene" target="_blank" class="text-gray-400 hover:text-blue-500 transition duration-300">Backstage</a>
             </div>
         </div>
     </footer>
